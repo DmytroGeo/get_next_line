@@ -6,7 +6,7 @@
 /*   By: dgeorgiy <dgeorgiy@student.42london.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 10:15:03 by dgeorgiy          #+#    #+#             */
-/*   Updated: 2024/12/05 09:57:06 by dgeorgiy         ###   ########.fr       */
+/*   Updated: 2024/12/05 12:15:39 by dgeorgiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	// Arguments: void *dest – pointer to the destination memory block, const void *src – pointer to the source memory block, size_t n – number of bytes to copy.
-	// Returns: A pointer to the destination memory block 'dest'.
-	// This function copies the first 'n' bytes from the source memory block 'src' to the destination memory block 'dest', and returns the destination pointer.
 	unsigned char		*d;
 	unsigned const char	*s;
 
@@ -82,9 +79,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 char	*ft_strdup(const char *s)
 {
-	// Arguments: const char *s – the string to duplicate.
-	// Returns: A new string that is a copy of 's', or NULL if memory allocation fails.
-	// This function allocates memory for a new string and copies the content of the string 's' into the newly allocated memory, including the null terminator.
 	char	*str;
 
 	str = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
